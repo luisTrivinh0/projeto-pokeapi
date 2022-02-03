@@ -1,0 +1,254 @@
+@import 'url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic)';
+body {
+  margin: 0;
+  background-color :#39436A;
+  user-select: none;
+}
+
+h1{
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+/* Lista de Pokémons */
+.list-pokemon{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color :#39436A
+}
+
+.list-item-pokemon {
+  align-items: center;
+  color: black;
+  padding: 20px;
+  margin: 20px;
+  font-family: Montserrat, sans-serif;
+  text-transform: capitalize;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px #0c092977;
+  transition: all .3s;
+  background: #ecf0f1;
+}
+
+.list-item-pokemon:hover{
+  transform: scale(1.05);
+}
+
+/* Sprite do Pokémon   */
+
+.list-item-pokemon .sprites-container {
+  position: relative;
+  width: 96px;
+  height: 96px;
+}
+.list-item-pokemon .sprite {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+}
+
+/* Tipo do Pokémon  */
+
+.list-item-pokemon .poketype{
+  position: relative;
+  display: flex;
+  bottom : -40px;
+}
+
+/* ID do Pokémon  */
+
+.list-item-pokemon .pokeid {
+  position: absolute;
+  margin : 0 auto;
+  margin : auto 0;
+}
+
+/* Nome Pokémon */
+
+.list-item-pokemon .pokename {
+  position: absolute;
+}
+
+.pokeinfo{
+  display: none;
+  position: absolute;
+  background-color: #B71C1C;
+  width: 800px;
+  height: 750px;
+  border-radius: 3px;
+  opacity: 0.95;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 15px #130f40a9;
+}
+
+.pokeinfo h2{
+  font-family: Montserrat, sans-serif;
+  color: white;
+  position: absolute;
+  top: 10px;
+}
+
+.pokeinfoname{
+  font-family: Montserrat, sans-serif;
+  color: white;
+  position: absolute;
+  text-transform: capitalize;
+  top: 60px;
+  font-size: 20px;
+}
+
+.close-button{
+  font-family: Montserrat, sans-serif;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom : 20px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.close-button2{
+  font-family: Montserrat, sans-serif;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom : 20px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.close-button:hover, .close-button2:hover, .submit:hover{
+  background-color: rgba(255, 255, 255, 0.123);
+}
+
+.pokeinfo .pokeinfotype{
+  color: white;
+  top: 400px;
+  position: absolute;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  left: 20px;
+  text-transform: capitalize;
+}
+
+.pokeinfo .pokeinfoabilities{
+  color: white;
+  top: 350px;
+  position: absolute;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  left: 20px;
+  text-transform: capitalize;
+}
+
+.pokeinfo .pokeheight{
+  color: white;
+  top: 450px;
+  position: absolute;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  left: 20px;
+}
+
+.pokeinfo .pokeweight{
+  color: white;
+  top: 500px;
+  position: absolute;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  left: 20px;
+}
+
+
+.infosprite{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top : 80px;
+  left: 100px;
+}
+
+.infosprite2{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top : 80px;
+  right: 100px;
+}
+
+.shinyform{
+  color: white;
+  top: 350px;
+  position: absolute;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  right: 200px; 
+  text-transform: capitalize;
+}
+
+.pokeinfodescription{
+  color: white;
+  top: 550px;
+  position: absolute;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  left: 20px;
+}
+
+.formSearch{
+  text-align: center;
+}
+.formDisplay{
+  text-align: center;
+}
+
+.input{
+  padding :10px;
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.submit{
+  font-family: Montserrat, sans-serif;
+  color: white;
+  background-color: rgba(183, 28, 28, 0.267);
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 2px; 
+  bottom : -300px;
+  outline: none;
+  font-size : 15px;
+}
+.submitfirst{
+  font-family: Montserrat, sans-serif;
+  color: white;
+  background-color: rgb(177, 8, 8);
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.submitfirst:hover{
+  background-color: rgba(177, 8, 8, 0.836)
+}
+
+
+
